@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "safeMint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoinIdo.sol": "IETNFT"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 99999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+			"keccak256": "0x5050943b32b6a8f282573d166b2e9d87ab7eb4dbba4ab6acf36ecb54fe6995e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4831d777a29ebdf9f2caecd70e74b97bff1b70e53622fd0a02aed01e21c8271",
+				"dweb:/ipfs/QmUqurVVnCc7XkMxb2k23TVQUtuhHZduJ3hTZarTJrqU24"
+			]
+		},
+		"CoinIdo.sol": {
+			"keccak256": "0x71658d4e69a018528b37f42348b2268e0030acfbcf574e58a61d30fff4463e77",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3759d2e26bb331808fbe46d28874771e5ec27cd5460492fd8471226487925f5c",
+				"dweb:/ipfs/QmVkstz7UjidQ853mLhgBX7KdS6LJ3fFMJSEk4YZPSVWnM"
+			]
+		},
+		"interfaces/IERC20.sol": {
+			"keccak256": "0x2a6d346befeb5fa4c270119146d2c7cf36883faef13d9efcdb3199648b80ca55",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://19b333c275589384d5a38ba5b562346fede248ab7749195840d220b704cca18e",
+				"dweb:/ipfs/Qma9hqQ2pkPzvrxdoWZBRxyEFVcbk6PCYgTMPcQUdHU8ns"
+			]
+		}
+	},
+	"version": 1
+}

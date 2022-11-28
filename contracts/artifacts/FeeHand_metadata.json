@@ -1,0 +1,196 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "SetFeeAddress",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_ipair",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token0",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "feeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "setFeeAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FeeHand.sol": "FeeHand"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FeeHand.sol": {
+			"keccak256": "0xc460efa78716b68bfeddf6118fad9e26359fd0dbb685081ec5dc444056553b40",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://ac5818d855d8397faf4d0a7a19627e4127fd205c6186421df1ac6e01c04dc0fc",
+				"dweb:/ipfs/QmSRwdp9xCww32cxLFh3EiZBiwBknzaPXe7o94d5VG6aeT"
+			]
+		},
+		"interfaces/IERC20.sol": {
+			"keccak256": "0x2a6d346befeb5fa4c270119146d2c7cf36883faef13d9efcdb3199648b80ca55",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://19b333c275589384d5a38ba5b562346fede248ab7749195840d220b704cca18e",
+				"dweb:/ipfs/Qma9hqQ2pkPzvrxdoWZBRxyEFVcbk6PCYgTMPcQUdHU8ns"
+			]
+		},
+		"interfaces/IFeeHand.sol": {
+			"keccak256": "0x377e889bf367f8108be4e1d4809ff4cc327fd8ffac154ac978c054b8cdf8a3d4",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://88960be6e9bf56e63f80e93a6ab757e24cdece582e9018a6c3934ce0b9be3ce3",
+				"dweb:/ipfs/QmSHYANPLaiqYzYxhuDsKhiovFbohJUAAXMdE4uj84tBeC"
+			]
+		},
+		"interfaces/IUniswapV2ERC20.sol": {
+			"keccak256": "0x4e52276ec68e030a886905cfcb76d77faaf9a726521b66f251cd7a1c6e56c799",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://b73cea6e447ff0d9b8aba4d7b199abb9a98c1489302e4a84fa60333710d6035a",
+				"dweb:/ipfs/QmZtw4xE9A28Gg7tnJ1uoAJWQRrzMd6Cj1bjgMmgHbiXtG"
+			]
+		},
+		"interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xdccbd4782f20ffdafd2c29be7399e019180dcb09bbdc3893b4bfc8583022d256",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://a62fdd538d89ceb9587020a4125205bcf2ef1d93e0c939d36d868eda0d9de168",
+				"dweb:/ipfs/QmSxpCwwwKmMZoLDZ1FLLNRyMfnETxT7QAHbyUNjJdkyW3"
+			]
+		}
+	},
+	"version": 1
+}
