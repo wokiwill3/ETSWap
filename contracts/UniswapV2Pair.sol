@@ -128,7 +128,6 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
                     uint256 denominator = rootK * 5 + rootKLast;
                     uint256 liquidity = numerator / denominator;
                     if (liquidity > 0){ 
-                        _mint(feeTo, liquidity);
                         _mint(feeHandAddress, liquidity*5*320/1000);
                         //IFeeHand(feeHandAddress).burn(address(this), token0, token1);
                     }
